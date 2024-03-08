@@ -1,0 +1,93 @@
+/* utilizzato dal contenitore di tutte le celle */
+.mainContainer {
+    position: absolute;
+    display: grid;
+
+    image-rendering: pixelated;
+}
+
+/* utilizzato da tutte le celle */
+.cell {
+    transition: filter 0.25s ease, transform 0.25s ease-out, scale 0.25s ease-out, rotate 0.25s, opacity 0.25s ease;
+}
+.cell:hover {
+    transform: scale(1.0714) rotate(2.5deg);
+}
+
+/* utilizzato dagli elementi dell'interfaccia che contano i punti */
+.score {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    transition: filter 1s ease, transform 1s ease-out;
+
+    position: absolute;
+
+    image-rendering: pixelated;
+}
+
+/* utilizzato dai conenitori delle barre di progresso */
+.progressBarContainer {
+    width: 89.361%;
+    height: 20%;
+
+    bottom: 16.666%;
+    left: 5.319%;
+
+    position: absolute;
+}
+
+/* utilizzato dalle barre di progresso */
+.progressBar {
+    width: 0%;
+    height: 100%;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/* il font utilizzato dal contatore del punteggio */
+@font-face {
+    font-family: "pixelFont";
+    src: url("pixelFont.woff") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* utilizzato dal contenitore del punteggio */
+.scoreCounter {
+    width: 94.68%;
+    height: 33.333%;
+
+    bottom: 10%;
+    left: 2.127%;
+
+    line-height: 1;
+    font-family: "pixelFont";
+    color: #c3fac7;
+
+    position: absolute;
+}
+
+/* utilizzato dagli elementi dei vari menu */
+.mainMenu {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    position: absolute;
+
+    transition: filter 0.25s ease;
+
+    line-height: 1;
+    font-family: "pixelFont";
+    text-align: center;
+
+    image-rendering: pixelated;
+}
+
+/* utilizzato dai tasti dei vari menu */
+.notTitle {
+    transition: transform 0.25s ease-out, rotate 0.25s;
+}
+.notTitle:hover {
+    transform: scale(1.1) rotate(2deg);
+}

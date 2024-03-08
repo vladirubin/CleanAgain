@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clean Again</title>
+</head>
+<body id="body" style="background-image: url(BG0.png); background-repeat: no-repeat; background-size: 100%">
+    <div class="mainMenu" id="title" style="background-image: url(title.png); transition: transform 10s ease"></div>
+    <div class="mainMenu notTitle" id="gioca" style="background-image: url(boxWide.png)">
+        <div class="mainMenu" id="txtGioca" style="color: #2d3c39"> gioca </div>
+    </div>
+    <div class="mainMenu notTitle" id="level" style="background-image: url(boxTaller.png)">
+        <div class="mainMenu" id="txtLevel0" style="color: #2d3c39"> livello </div>
+        <div class="mainMenu" id="txtLevel1" style="color: #c3fac7"> 5x5 </div>
+        <div class="mainMenu notTitle" id="levelPlus" style="background-image: url(plusAvailable.png)"></div>
+        <div class="mainMenu notTitle" id="levelMinus" style="background-image: url(minusUnavailable.png)"></div>
+    </div>
+    <div class="mainMenu notTitle" id="audio" style="background-image: url(boxTaller.png)">
+        <div class="mainMenu" id="txtAudio0" style="color: #2d3c39"> volume </div>
+        <div class="mainMenu" id="txtAudio1" style="color: #c3fac7"> 100 </div>
+        <div class="mainMenu notTitle" id="audioPlus" style="background-image: url(plusUnavailable.png)"></div>
+        <div class="mainMenu notTitle" id="audioMinus" style="background-image: url(minusAvailable.png)"></div>
+    </div>
+    <div class="mainMenu notTitle" id="classifica" style="background-image: url(boxWide.png)">
+        <div class="mainMenu" onclick="sort()" id="txtClassifica" style="color: #2d3c39"> record </div>
+    </div>
+    <script src="scriptMenu.js"></script>
+</body>
+</html>
